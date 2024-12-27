@@ -1,0 +1,67 @@
+/* Base styles */
+:root {
+    --primary-color: #4ade80;
+    --secondary-color: #22c55e;
+    --bg-dark: #111827;
+    --bg-darker: #0f172a;
+    --text-color: #f3f4f6;
+    --text-muted: #9ca3af;
+    --card-bg: #1f2937;
+    --border-color: #374151;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-dark);
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 5rem 2rem;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: var(--bg-darker);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
